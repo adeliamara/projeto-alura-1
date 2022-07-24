@@ -86,17 +86,17 @@ footer {
 	text-align: center;
 	background: url("bg.jpg");
 	padding: 40px 0;
+	background-color: #000000;
 }
 
 .copyright {
-	color: black;
+	color: #FFFFFF;
 	font-size: 13px;
 	margin: 20px 0 0;
 }
 
 main {
-	width: 75%;
-	margin: 0 auto;
+	
 }
 
 form {
@@ -166,6 +166,13 @@ td, th {
 	clear: left;
 }
 
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 75%;
+	margin: 0 auto;
+}
+
 .principal p {
 	margin: 0 0 1em;
 }
@@ -184,6 +191,32 @@ td, th {
 	margin: 0 20px 20px 0;
 }
 
+.mapa {
+	padding: 3em 0;
+	background:linear-gradient(#FEFEFE,#888888);
+
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa-conteudo {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.imagem-beneficios {
+	width: 55%;
+	box-shadow: 10px 10px 30px #000000;
+}
+
 .conteudo-beneficios {
     width: 55%;
     margin:  0 auto;
@@ -199,24 +232,20 @@ td, th {
     line-height: 1.5;
 }
 
+.itens:before {
+	content: "✫ ";
+}
 .itens:nth-child(1) {
     font-weight: bold;
-}
-
-.imagem-beneficios {
-	width: 55%;
-}
-
-.mapa {
-	padding: 3em 0;
-}
-
-.mapa p {
-	margin: 0 0 2em;
-	text-align: center;
 }
 
 .video {
 	width: 70%;
 	margin: 1em auto;
+}
+
+@media screen and (max-width:480px) {
+	.caixa, .principal, .conteudo-beneficios {
+		width: auto;
+	}
 }
